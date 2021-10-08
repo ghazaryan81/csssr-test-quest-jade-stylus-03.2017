@@ -1,0 +1,47 @@
+.checkbox
+	position()
+	min-height 34.8px
+
+	label
+		padding-left 27px
+		font-size 21.6px
+		+below(breakPoint5)
+			font-size 20px
+		letter-spacing -.3px
+
+		&:before
+		&:after
+			position(6px, 1px, absolute)
+			size(19px, 18px)
+			content ''
+			background url(../../img/sprite.png) no-repeat transparent
+			transition opacity .24s ease-in-out
+
+		&:after
+			background-position 0 -274px
+			opacity 1
+
+		&:before
+			background-position 0 -294px
+			opacity 0
+
+		&:hover:after
+			opacity 0
+
+		&:hover:before
+			opacity 1
+
+.checkbox.selected
+	label
+		&:after
+			background-position 0 -334px
+		&:before
+			background-position 0 -314px
+
+@-moz-document url-prefix()
+	.checkbox
+		label
+			&:before
+			&:after
+				top 8px
+

@@ -1,0 +1,59 @@
+[{
+		"title": "БЭМ/OOCSS",
+		"checked": true
+	}, {
+		"title": "Pug (Jade)",
+		"checked": true
+	}, {
+		"title": "Stylus/LESS/SASS",
+		"checked": true
+	}, {
+		"title": "Работаю с SVG",
+		"checked": false
+	}, {
+		"title": "Верстаю семантично",
+		"checked": true
+	}, {
+		"title": "Accessibility (A11Y)",
+		"checked": false
+	}, {
+		"title": "ES2015/ES2016",
+		"checked": true
+	}, {
+		"title": "Gulp/GRUNT",
+		"checked": true
+	}, {
+		"title": "Webpack",
+		"checked": true
+	}, {
+		"title": "Дружу с WebGL",
+		"checked": false
+	}, {
+		"title": "jQuery",
+		"checked": true
+	}, {
+		"title": "Знаю/изучаю Angular",
+		"checked": false
+	}, {
+		"title": "Знаю/изучаю React",
+		"checked": true
+	}, {
+		"title": "Знаю/изучаю Node.js",
+		"checked": false
+	},{
+		"title": "Использую Git",
+		"checked": true
+	}, {
+		"title": "С глазомером всё ок",
+		"checked": true
+	}, {
+		"title": "Читаю",
+		"checked": true
+	}, {
+		"title": "Я ленивый(-ая)",
+		"checked": false
+	}, {
+		"title": "У меня хороший английский",
+		"checked": false
+	}]
+

@@ -1,0 +1,19 @@
+include ../header/header
+include ../profile/profile
+include ../skills/skills
+include ../range/range
+include ../about-me/about-me
+include ../plans/plans
+include ../footer/footer
+
+mixin index()
+	+b.wrapper
+		+header()
+		+b('main').content(role='main')
+			+b('form')(action='/' method='post' name='info' id='info' class='info')
+				+profile(getData('profile'))
+				+skills(getData('skills'))
+				+range(getData('slider'))
+				+about-me()
+				+plans(getData('plans'))
+		+footer()

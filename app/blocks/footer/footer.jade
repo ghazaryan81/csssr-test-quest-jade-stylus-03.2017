@@ -1,0 +1,6 @@
+mixin footer()
+	+b('footer').footer&attributes(attributes)
+		+label.label.js-date__label Дата заполенения
+		+e('span').input.js-date__input(contenteditable='true' spellcheck='false') 30.03.2017
+		+b('input').js-date__getter(type='hidden' contenteditable='true' spellcheck='false')
+		block

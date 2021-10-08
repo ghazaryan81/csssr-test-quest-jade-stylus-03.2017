@@ -1,0 +1,9 @@
+include ../profile-row/profile-row.jade
+
+mixin profile(profileData)
+	+b('section').profile.js-profile&attributes(attributes)
+		each val in profileData
+			+profile-row()
+				+inject('title') #{val.title}
+				+inject('filling') #{val.filling}
+		block

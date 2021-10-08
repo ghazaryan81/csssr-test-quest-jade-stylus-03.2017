@@ -1,0 +1,71 @@
+.cols
+	padding-top 26px
+	clearfix()
+	width 100%
+	&__item
+		float left
+
+	&__item:nth-of-type(1)
+		width 33.406493506493506%
+
+	&__item:nth-of-type(2)
+		width 35%
+		.checkbox:nth-of-type(2)
+			label
+				padding-left 26px
+
+		.checkbox:nth-of-type(3)
+			label
+				letter-spacing -.6px
+
+		.checkbox:nth-of-type(5)
+			label
+				letter-spacing -.5px
+
+	&__item:nth-of-type(3)
+		width 31.428571428571427%
+		.checkbox:nth-of-type(1)
+		.checkbox:nth-of-type(2)
+			label
+				letter-spacing -.5px
+
+		.checkbox:nth-of-type(3)
+			min-height 37px
+			label
+				position(2px, -1px)
+				display inline-block
+				letter-spacing -.5px
+				&:after
+				&:before
+					position(5px, 2px, absolute)
+
+		.checkbox:nth-of-type(4)
+			label
+				left -1px
+				&:after
+				&:before
+					position(4px, 2px, absolute)
+
+		.checkbox:nth-of-type(5)
+			label
+				position(2px, -1px)
+				display inline-block
+				line-height 26px
+				&:after
+				&:before
+					position(4px, 2px, absolute)
+
+	&__item:nth-of-type(1)
+	&__item:nth-of-type(2)
+	&__item:nth-of-type(3)
+		+below(breakPoint4)
+			width 50%
+		+below(breakPoint6)
+			margin-x auto
+			float none
+			width auto
+			max-width 320px
+
+@-moz-document url-prefix()
+	.cols
+		padding-top 25px

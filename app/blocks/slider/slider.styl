@@ -1,0 +1,29 @@
+.slider-group
+
+	+below(breakPoint9)
+		padding-left 10px
+
+	+below(breakPoint6)
+		margin-x auto
+		max-width 320px
+
+.slider
+	position()
+	margin-left 1px
+	clearfix()
+
+	&__track
+		position(0, 0, absolute, 100)
+		background url(../../img/info-line.png) 0 -5px no-repeat
+		size(100%, 24px)
+
+		+below(breakPoint9)
+			size(24px, 450px)
+			background url(../../img/sprite.png) no-repeat -332px 0
+
+.handle-cell
+	position(-24px, 0, absolute)
+	size(100%, 100%)
+
+	+below(breakPoint9)
+		top 0

@@ -1,0 +1,51 @@
+.footer
+	position()
+	padding-top 0
+	padding-bottom 63px
+	clear both
+	clearfix()
+	width 100%
+	word-wrap break-all
+	section-out-pad()
+
+	.label
+	&__input
+		display inline-block
+
+	.label
+		position(20px, auto, absolute)
+		padding-right 6px
+		font 22.43px/49.83px bold
+		letter-spacing 0
+		color titleColor
+		background url(../../img/canvas.jpg) transparent
+		+below(breakPoint6)
+			position()
+		+below(breakPoint5)
+			font-size 20px
+
+
+	&__input
+		overflow hidden
+		min-width 392px
+		max-width 100%
+		font 30px/60px cu
+		text-indent 195px
+		word-wrap break-all
+		cursor text
+		color textareaColor
+		background url(../../img/info-line.png) repeat-y transparent left 46px
+		border solid #fff 0
+		transition all .24s ease-in-out
+
+		+below(breakPoint5)
+			min-width 323px
+			font-size 25px
+			text-indent 171px
+
+		+below(breakPoint6)
+			position()
+			display inline-block
+			min-width auto
+			max-width auto
+			text-indent 0

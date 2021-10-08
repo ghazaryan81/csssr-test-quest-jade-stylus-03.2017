@@ -1,0 +1,21 @@
+include ../section-title/section-title
+include ../section-description/section-description
+include ../radio/radio
+include ../spoiler/spoiler
+
+mixin plans(plansData)
+	+b('section').plans&attributes(attributes)
+		+section-title()
+			| Какие у вас планы на будущее?
+		+section-description()
+			| Этот ответ ни на что не повлияет.
+			| Не беда, если в будущем ваши планы
+			| поменяются.
+		+b.radio-cell
+			each val in plansData
+				+radio(val.title, val.checked)
+		+spoiler()
+			| Давно выяснено, что при оценке дизайна и композиции
+			| читаемый текст мешает сосредоточиться. Lorem Ipsum
+			| используют потому, что тот обеспечивает более или
+			| менее стандартное заполнение шаблона

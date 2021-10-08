@@ -1,0 +1,17 @@
+include ../checkbox/checkbox
+
+mixin cols(skillsData)
+	- const row = 7;
+	- const column = Math.ceil(skillsData.length/row);
+	- let ind = 0;
+	+b.cols&attributes(attributes)
+		- for (let i = 0; i < column; i++)
+			+e.item
+				- for (let j = 0; j < row; j++)
+					- if (ind < skillsData.length)
+						- if (skillsData[ind].checked === true)
+							+checkbox(skillsData[ind].title, 'checked')
+						- else
+							+checkbox(skillsData[ind].title)
+						- ++ind
+		block

@@ -1,0 +1,74 @@
+.radio
+	position()
+	padding-top 14px
+	display inline-block
+	min-height 34.8px
+
+	+below(breakPoint10)
+		display block
+		width 100%
+
+		&-cell
+			padding 20px 0
+
+	&:nth-of-type(1)
+		padding-right 14px
+
+	&:nth-of-type(2)
+		padding-right 19px
+
+	&:nth-of-type(3)
+		padding-right 15px
+
+	&:nth-of-type(1)
+	&:nth-of-type(2)
+	&:nth-of-type(3)
+	&:nth-of-type(4)
+		label
+			&:after
+			&:before
+				top 0
+				left 0
+
+	label
+		+below(breakPoint5)
+			font-size 20px
+		padding-left 32px
+		font-size 21px
+		letter-spacing -.3px
+
+		&:before
+		&:after
+			position(6px, 1px, absolute)
+			size(28px, 28px)
+			content ''
+			background url(../../img/sprite.png) no-repeat transparent
+			transition opacity .24s ease-in-out
+
+		&:after
+			background-position 0 -362px
+			opacity 1
+
+		&:before
+			background-position 0 -392px
+			opacity 0
+
+		&:hover:after
+			opacity 0
+
+		&:hover:before
+			opacity 1
+
+.radio.selected
+	label
+		&:after
+			background-position 0 -452px
+		&:before
+			background-position 0 -422px
+
+@-moz-document url-prefix()
+	.radio
+		label
+			&:before
+			&:after
+				top 8px

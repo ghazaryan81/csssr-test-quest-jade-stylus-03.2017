@@ -1,0 +1,30 @@
+fontURL='../../fonts/ptsans/'
+fontFileName = PTSans-Bold PTSans-Regular
+for family, index in fontFileName
+	@font-face
+		font-family family
+		src url(fontURL family '.eot')
+		src url(fontURL family '.eot?#iefix') format('embedded-opentype'),
+		url(fontURL family '.woff2') format('woff2'),
+		url(fontURL family '.woff') format('woff'),
+		url(fontURL family '.ttf') format('truetype'),
+		url(fontURL family '.otf') format('opentype'),
+		url(fontURL family '.svg#' family) format('svg')
+		font-weight normal
+		font-style normal
+
+fontURL='../../fonts/courier-unicode/'
+fontFileName = courier-unicode
+fontFamily = 'Courier-Unicode'
+@font-face
+	font-family fontFamily
+	src url(fontURL fontFileName '.eot')
+	src url(fontURL fontFileName '.eot?#iefix') format('embedded-opentype'),
+	url(fontURL fontFileName '.woff2') format('woff2'),
+	url(fontURL fontFileName '.woff') format('woff'),
+	url(fontURL fontFileName '.ttf') format('truetype'),
+	url(fontURL fontFileName '.otf') format('opentype'),
+	url(fontURL fontFileName '.svg#' fontFamily) format('svg')
+	font-weight 400
+	font-style normal
+	font-stretch normal

@@ -1,0 +1,15 @@
+include ../input/input
+include ../label/label
+include ../link/link
+
+mixin checkbox(labelTitle, checked)
+	+b.checkbox.js-checkbox&attributes(attributes)
+		if checked
+			+input.input.js-checkbox__input(type='checkbox' name='checkbox-skills[]' checked)
+		else
+			+input.input.js-checkbox__input(type='checkbox' name='checkbox-skills[]')
+		+label.label.js-checkbox__label #{labelTitle}
+		if (labelTitle === 'Читаю')
+			+b.link.g-js-tb.g-js-hta(href='http://blog.csssr.ru/' title='blog csssr')
+				| blog.csssr.ru
+		block

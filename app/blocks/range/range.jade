@@ -1,0 +1,9 @@
+include ../slider/slider
+include ../range-value/range-value
+
+mixin range(sliderData)
+	+b('section').range
+		+section-title()
+			| Уровень владения JavaScript - 
+			+range-value().js-range-value(type='text' disabled)
+		+slider(sliderData)

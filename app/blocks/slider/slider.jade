@@ -1,0 +1,8 @@
+include ../scale/scale
+
+mixin slider(sliderData)
+	+b.slider-group
+		+b.slider
+			+e.track.js-slider__track
+				+b.handle-cell.js-handle-cell
+		+scale(sliderData)

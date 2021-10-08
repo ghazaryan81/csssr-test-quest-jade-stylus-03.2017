@@ -1,0 +1,5 @@
+mixin scale-point(sliderData)
+	each val in sliderData
+		+e.point
+			+b('span').point-title #{val.title}
+	block

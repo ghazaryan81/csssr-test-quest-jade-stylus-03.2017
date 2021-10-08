@@ -1,0 +1,11 @@
+include ../label/label
+include ../textarea/textarea
+
+mixin profile-row()
+	+injected: block
+	+b.profile-row.js-profile-row&attributes(attributes)
+		+label.label.js-profile-label
+			+use('title')
+		+textarea.textarea.js-profile-textarea(rows='1', cols='10', name='profile-textarea[]')
+			+use('filling')
+		block

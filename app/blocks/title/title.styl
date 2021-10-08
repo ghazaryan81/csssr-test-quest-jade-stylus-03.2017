@@ -1,0 +1,36 @@
+.title
+	size(100%, 130px)
+	position()
+	clearfix()
+	content-zero()
+
+	+below(breakPoint1)
+		height 110px
+
+	&:after
+		height 110px
+		
+		+below(breakPoint1)
+			height 90px
+		+below(breakPoint2)
+			height 79px
+
+	&:after
+		position(20px, 50%, absolute)
+		margin-left -124px
+		width 216px
+		text-align center
+		content ''
+		background url(../../img/sprite.png) no-repeat 0 -154px
+
+		+below(breakPoint1)
+			margin-left -87px
+			width 179px
+			background-position 0 -127px
+			background-size 276px auto
+
+		+below(breakPoint2)
+			margin-left -87px
+			width 154px
+			background-position 0 -107px
+			background-size 236px auto

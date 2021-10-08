@@ -1,0 +1,21 @@
+.logo
+	position(69px, 3px)
+	float left
+	background url(../../img/sprite.png) no-repeat
+	content-zero()
+	size(144px, 35px)
+
+	+below(breakPoint1)
+		size(136px, 34px)
+		background-position 0 1px
+		background-size 315px auto
+
+	+below(breakPoint2)
+		size(130px, 34px)
+		background-position 0 1px
+		background-size 303px auto
+
+	+below(breakPoint3)
+		position()
+		margin 0 auto 30px
+		float none

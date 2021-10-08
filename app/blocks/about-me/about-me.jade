@@ -1,0 +1,22 @@
+include ../section-title/section-title
+include ../section-description/section-description
+include ../textarea/textarea
+
+mixin about-me()
+	+b('section').about-me.js-about-me&attributes(attributes)
+		+section-title()
+			| Расскажите о себе словами
+		+section-description()
+			| Напишите пару предложений, чем вас
+			| привлекла наша вакансия и чего вы
+			| ожидаете от работы в CSSSR. Кстати,
+			| будет здорово, если при нехватке места
+			| для текста строки будут добавляться автоматически.
+		+b('div').about-me-row.js-about-me-row
+			+textarea.textarea.js-about-me-textarea(rows='3', cols='10', name='about-me' placeholder='' data-default-height='172')
+				|	Есть много вариантов Lorem Ipsum, но
+				|	большинство из них имеет не всегда
+				|	приемлемые модификации, например,
+				|	юмористические вставки или слова,
+				|	которые даже отдалённо не напоминают латынь
+		block

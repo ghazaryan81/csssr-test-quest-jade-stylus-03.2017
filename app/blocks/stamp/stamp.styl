@@ -1,0 +1,22 @@
+.stamp
+	position(13px, 64px)
+	float right
+	background url(../../img/sprite.png) no-repeat 0 -39px
+	size(252px, 107px)
+	content-zero()
+	clear both
+
+	+below(breakPoint1)
+		background-position 0 -34px
+		background-size 309px auto
+		size(237px, 100px)
+
+	+below(breakPoint2)
+		background-position 0 -29px
+		background-size 258px auto
+		size(197px, 83px)
+
+	+below(breakPoint3)
+		position()
+		margin-x auto
+		float none

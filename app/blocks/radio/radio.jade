@@ -1,0 +1,12 @@
+include ../input/input
+include ../label/label
+include ../link/link
+
+mixin radio(labelTitle, checked)
+	+b.radio.js-radio&attributes(attributes)
+		if checked
+			+input.input.js-radio__input(type='radio' name='radio-plans' value='#{labelTitle}' checked)
+		else
+			+input.input.js-radio__input(type='radio' name='radio-plans' value='#{labelTitle}')
+		+label.label.js-radio__label #{labelTitle}
+		block

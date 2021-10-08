@@ -1,0 +1,13 @@
+[{
+		"title": "Верстать",
+		"checked": false
+	}, {
+		"title": "Прокачиваться в JS",
+		"checked": false
+	}, {
+		"title": "Менеджерство",
+		"checked": false
+	}, {
+		"title": "Другое",
+		"checked": true
+}]

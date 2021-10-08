@@ -1,0 +1,35 @@
+import('sprites/*')
+import('helpers/svg-size')
+@import 'helpers/variables'
+@import 'helpers/mixins'
+@import 'helpers/project-mixins'
+@import 'helpers/fonts'
+@import 'helpers/optimize'
+@import 'helpers/scroll-style'
+@import 'helpers/nouislider.css'
+
+*:after,
+*:before
+	box-sizing border-box
+
+::selection
+	background #000
+	color #fff
+
+body
+	font 15px/23px bold
+	background bodyBackgroundColor
+
+.wrapper
+	min-height 1900px
+	margin-x auto
+	padding mainOutPad
+	max-width mainWidth
+	background url(../../img/canvas.jpg) left top
+	+below(breakPoint11)
+		padding 0 22px
+
+.content
+	section-out-pad()
+
+import('../blocks/**/*')

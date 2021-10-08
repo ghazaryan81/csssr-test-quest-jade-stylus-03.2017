@@ -1,0 +1,14 @@
+.label
+	position()
+	display inline-block
+	font 23px bold
+	letter-spacing -.5px
+	cursor pointer
+	user-select none
+	transition color .24s ease-in-out, font-size .24s ease-in-out
+
+	+below(breakPoint5)
+		font-size 20px
+
+	&:hover
+		color hoverColor

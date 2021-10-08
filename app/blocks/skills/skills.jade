@@ -1,0 +1,18 @@
+include ../section-title/section-title
+include ../section-description/section-description
+include ../cols/cols
+
+mixin skills(skillsData)
+	+b('section').skills&attributes(attributes)
+		+section-title()
+			| Расскажите о себе чекбоксами
+		+section-description()
+			| Отметьте чекбоксами пункты, которые 
+			| соответствуют вашим скиллам. Кстати, 
+			| отсутствие опыта не означает, что у 
+			| вас меньше шансов стать одним из наших 
+			| товарищей. Это означает, что вы будете 
+			| получать те задачи, с которыми гарантировано 
+			| будете справляться.
+		+cols(skillsData)
+		block

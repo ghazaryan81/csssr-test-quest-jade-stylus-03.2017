@@ -1,0 +1,10 @@
+include ../logo/logo
+include ../stamp/stamp
+include ../title/title
+
+mixin header()
+	+b('header').header&attributes(attributes)
+		+logo(href='#' title='CSSSR Project Template') CSSSR Project Template
+		+stamp(title='СЕКРЕТНО ЗАПОЛНЕНО СОБСТВЕННОРУЧНО') СЕКРЕТНО ЗАПОЛНЕНО СОБСТВЕННОРУЧНО
+		+title(title='ДЕЛО') ДЕЛО
+		block
